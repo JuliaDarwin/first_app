@@ -8,8 +8,7 @@ export default function Homepage() {
        <header className="p-4 relative h-60 bg-[url('/homepagepic.webp')] text-center">
        
         </header>
-        <main className="bg-gray-200 dark:bg-blue-500"> 
-          <ThemeToggle />
+        <main className="dark:bg-indigo-600"> 
           <h1>Welcome to Pordon's lessons</h1>
           <div className="mx-10 my-20">
             <h2>Why Pordon school?</h2>

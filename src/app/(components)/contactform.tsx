@@ -39,7 +39,7 @@ function prevStep() {
         setMsg(`Form Submitted!\n`+`Name: ${formData.name}\nEmail: ${formData.email}\nWeekly Lessons: ${formData.weeklyLessons}\nLesson Type: ${formData.lessonType}\nMessage: ${formData.message}`+`We will get back to you in 5 days`);
     }
     return (
-        <div className="max-w-md w-full mx-auto p-10 bg-white shadow-lg rounded mt-15 mb-10">
+        <div className="max-w-md w-full mx-auto p-10 bg-white text-black shadow-lg rounded mt-15 mb-10">
             <h1 className="text-center">Contact Form</h1>
         <ProgressBar step={step} />
         <form onSubmit={handleSubmit}>

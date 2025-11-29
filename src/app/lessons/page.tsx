@@ -9,7 +9,6 @@ export default function Lessons(){
         </header>
         <main>
             <h1>Lesson Types</h1>
-            <ThemeToggle />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto max-w-6xl my-15 px-10">
                 {/* First lesson type */}
                 <div className="bg-gray-100 ring-1 ring-gray-300 grid grid-rows-[1fr_auto] rounded-xl p-8 gap-6 text-center hover:scale-105 transform transition-transform">
@@ -30,7 +29,7 @@ export default function Lessons(){
                 </div>
                 {   /* Second lesson type */}
                 <div className="relative text-center bg-gray-950 text-white ring-2 ring-fuchsia-500 p-8 grid grid-rows-[1fr_auto] gap-6 rounded-xl scale-105 hover:scale-115 transform transition-transform">
-                    <div className="absolute -top-3 right-3 bg-gradient-to-r from-fuchsia-500 to-indigo-500 rounded-full px-3 py-1 text-xs font-bold text-white ">Most Popular
+                    <div className="absolute -top-3 right-3 bg-linear-to-r from-fuchsia-500 to-indigo-500 rounded-full px-3 py-1 text-xs font-bold text-white ">Most Popular
                     </div>
                     <div className="grid grid-rows-[auto_auto_auto_1fr] gap-y-5">
                         <p className="text-fuchsia-200 text-lg font-bold text-center">General</p>
@@ -43,7 +42,7 @@ export default function Lessons(){
                             Materials included</li>
                         </ul>
                      </div>
-                    <Link href="/about" className="text-center mt-5 p-2 bg-gradient-to-r from-fuchsia-500 to-indigo-600 text-white rounded-md hover:bg-fuchsia-600">Learn More</Link>
+                    <Link href="/about" className="text-center mt-5 p-2 bg-linear-to-r from-fuchsia-500 to-indigo-600 text-white rounded-md hover:bg-fuchsia-600">Learn More</Link>
                     
                 </div>
 

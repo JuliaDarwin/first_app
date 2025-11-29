@@ -1,5 +1,7 @@
 
+"use client";
 import Link from "next/link";
+import ThemeToggle from "./theme-toggle";
 
 export default function Nav() {
     return (
@@ -15,6 +17,9 @@ export default function Nav() {
                 </li>
                 <li className="hover:underline text-white">
                   <Link href="/contact">Contact</Link>
+                </li>
+                <li>
+                  <ThemeToggle />
                 </li>
               </ul>
           </div>

@@ -9,7 +9,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="p-2 rounded-full bg-gray-200 dark:bg-gray-800"
+      className="p-2 rounded-full bg-gray-200 text-black"
       aria-label="Toggle Theme"
     >
       {theme === "light" ? <FaMoon /> : <FaSun />}

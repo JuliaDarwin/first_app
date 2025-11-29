@@ -7,7 +7,7 @@ export default function ContactPage() {
        
         </header>
         <main>
-            <div className="flex justify-center items-center w-[100%] h-[100vh] mt-15">
+            <div className="flex justify-center items-center w-full h-screen mt-15">
                 <ContactForm />
             </div>
         </main>

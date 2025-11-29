@@ -4,6 +4,8 @@ import Nav from "./(components)/nav";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,11 +30,37 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
         <body> 
-          <Nav />
+          
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <Nav />
              {children}
           </ThemeProvider>          
         </body>
+        <footer className="bg-black text-white text-center mt-20 px-10 pt-10 pb-5 flex flex-col w-full">
+          <div className="flex flex-row justify-between items-center mb-4 w-full"> 
+            <div>
+            <p>Pordon School of Catalan © 2025</p>
+          </div>
+          <div className="flex flex-row gap-15">
+            <div>
+              <p className="font-bold pb-3">FOLLOW US</p>
+              <div className="flex flex-row justify-evenly items-center ">
+              <a href="https://www.instagram.com/saileach.gan.teorainn/" target="_blank"><FaInstagram className="text-2xl cursor-pointer hover:text-pink-500" /></a>
+              <FaFacebook className="text-2xl cursor-pointer hover:text-blue-500" />
+              </div>
+            </div>
+            <div>
+              <p className="font-bold pb-3">LEGAL</p>
+              <p>Privacy Policy</p>
+              <p>Terms and Conditions</p>
+            </div>
+          </div>
+          <div>
+            <Link href="/contact" className="text-center mt-5 p-5 border-2 bg-indigo-600 text-white rounded-md hover:bg-black">Join Us</Link>
+          </div>
+          </div>
+          
+        </footer>
     </html>
   );
 }
