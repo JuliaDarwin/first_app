@@ -7,7 +7,7 @@ import ProgressBar from "./progressbar";
 export default function ContactForm() {
     const [step, setStep] = useState(1);
 
-    function nextStep() {
+function nextStep() {
     if (step < 3) setStep(step + 1);
 }
 
@@ -39,8 +39,8 @@ function prevStep() {
         setMsg(`Form Submitted!\n`+`Name: ${formData.name}\nEmail: ${formData.email}\nWeekly Lessons: ${formData.weeklyLessons}\nLesson Type: ${formData.lessonType}\nMessage: ${formData.message}`+`We will get back to you in 5 days`);
     }
     return (
-        <div className="max-w-md w-full mx-auto p-10 bg-white text-black shadow-lg rounded mt-15 mb-10">
-            <h1 className="text-center">Contact Form</h1>
+        <div className="max-w-md w-[90%] mx-auto p-10 bg-white text-black shadow-lg rounded sm:mt-15 mb-10">
+            <h1 className="text-center 2xl:text-xl">Contact Form</h1>
         <ProgressBar step={step} />
         <form onSubmit={handleSubmit}>
          { step == 1 && (
